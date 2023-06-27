@@ -1,0 +1,19 @@
+<body *ngIf="socio">
+    <article class="min-h-screen w-full bg-gray-100 lg:flex flex-wrap">
+
+        <section class="lg:min-h-screen  h-48 grow flex tems-start items-center bg-socio text-white font-semibold 2xl:text-2xl" style="position: sticky; top: 0;">
+            <img [src]="socio.img[0].url" alt="">
+            <footer class="w-full text-center block">
+              <h1>{{socio.name}}</h1>
+            </footer>
+          </section>
+          
+
+<section class=" flex flex-col justify-start text-sm text-gray-600 lg:w-2/3 grow space-y-6 px-16  bg-società lg:pt-24 pt-16  pb-12  " >
+<ul *ngFor="let items of socio.description" class="list-disc ">
+    <li>{{items.text}}</li>
+</ul>
+
+</section>
+    </article>
+</body>

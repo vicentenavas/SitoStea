@@ -1,0 +1,98 @@
+<body class=" w-full  xl:pt-0">
+  <article class="lg:flex bg-white ">
+<aside class="lg:w-2/5  h-100 lg:min-h-screen grow lg:grow-0  flex-col flex justify-end">
+  <section id="info  " class="lg:h-5/6 h-5/6    text-left lg:font-semibold ">
+<div class=" text-3xl lg:text-4xl xl:text-4xl  h-40 lg:h-48 xl:h-64 px-4 py-8 items-center ">
+<h1>Siamo</h1>
+<h1 [class.animacion]="animacionDerechaIzquierda">{{ fraseActual }}</h1>
+</div>
+<div class=" flex grow h-max px-4 self-end bg- lg:font-medium font-normal lg:text-2xl xl:text:3xl items-end lg:py-12 py-1 text-2xl md:mr-24 mr-2">
+<p>  Nata della collabotazione di due liberi profesionisti e da un gruppo di
+  progettisti, con competenze ed esperieze maturate in diversi settori tecnici</p>
+</div>
+<footer class=" h-max py-8 px-4 lg:text-lg text-normal">
+<a routerLink="/società">See more about us</a>
+</footer>
+</section>
+</aside>
+<main class="lg:h-1/2 lg:max-h-full flex grow ">
+    <img src="assets/img/home/img9.jpg" alt="" class="lg:h-screen h-96  w-full object-cover">
+</main>
+  </article>
+  
+
+  <section class="h-96 bg-black w-full flex items-center justify-center">
+    <div class="h-2/3 md:w-3/4 sm:w-5/6 w-screen   flex justify-center flex-col text-white">
+      <ul class="w-full h-1/5 flex justify-between border-b border-white lg:px-8  px-2 font-semibold md:font-bold 2xl:text-lg text-sm">
+<li class="w-12 flex justify-center ">Paese</li>
+<li class="w-12 flex justify-center ">Lunghezza</li>
+<li class="w-12 flex justify-center ">Tipo</li>
+<li class="w-12 flex justify-center ">Città</li>
+<li class="w-12 flex justify-center ">Capitale</li>
+<li class="w-12 flex justify-center ">Fondata</li>
+      </ul>
+  <ul class="w-full h-1/6 flex justify-between border-b border-white lg:px-8 px-2 items-start mt-6 lg:text-base text-sm">
+<li class="w-12 flex justify-center ">Italia</li>
+<li class="w-12 flex justify-center ">S</li>
+<li class="w-12 flex justify-center ">Engineering</li>
+<li class="w-12 flex justify-center ">Arco</li>
+<li class="w-12 flex justify-center ">100.000</li>
+<li class="w-12 flex justify-center ">2006</li>
+
+
+</ul>
+    </div>
+  </section>
+  
+
+
+
+
+
+  <div class="bg-black h-full ">
+    <div class="text-white flex  xl:text-4xl text-2xl py-12 justify-center">
+      <h1>Servizi</h1>
+    </div>
+
+    <div class=" h-full sm:flex sm:flex-wrap   lg:px-4 px-0  ">
+      <div
+        class="justify-center lg:h-128 h-128 lg:w-1/4 sm:w-1/2 w-screen bg-black border-gray-800 flex-col border-y border"
+        *ngFor="let service of servizio">
+        <div class="bg-white h-2/6 w-full">
+          <img [src]="service.img[0].url" alt="" class="h-full w-full 2xl:object-cover object-cover">
+        </div>
+        <div class=" text-white   text-xl   items-center px-2 h-1/6 flex  w-full">
+          <h1>{{service.name}}</h1>
+        </div>
+        <div class="h-2/6 px-2 text-white 2xl:text-base text-sm">
+          <h1>{{service.description[0].text}}</h1>
+        </div>
+        <div class="h-1/6 flex px-2 items-center text-white text-md">
+          <svg width="64px" height="64px" viewBox="-4.96 -4.96 25.92 25.92" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" stroke="#ffffff" stroke-width="0.00016"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M8.64 5l2.5 2.5v.7l-2.5 2.5-.71-.7 1.64-1.65H4v-1h5.57L7.92 5.7l.72-.7z"></path></g></svg>
+       <a [routerLink]="['/servizi', service.id]">vedi maggiori informazioni</a>
+        </div>
+      </div>
+
+
+      <div class="bg-black lg:w-1/4 sm:w-1/2 flex justify-center  border border-gray-600 items-center">
+        <div class=" lg:h-1/2 sm:w-1/2 flex h-128 items-center justify-center">
+          <div class="">
+            
+            <button class="bg-white py-3 xl:px-8 px-16 rounded-md"><a routerLink="/contatti">Contattaci!</a></button>
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+  </div>
+  
+  <app-on-top-button class=""></app-on-top-button>
+   
+</body>

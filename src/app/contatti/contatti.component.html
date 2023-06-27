@@ -1,0 +1,33 @@
+<div class="pt-32 border xl:h-96 flex justify-center space-x-24 content-center">
+    <div class="xl:w-2/6 sm:w-2/3 w-screen px-2 items-center pt-32">
+        <h1 class="flex justify-center text-2xl pb-16">Contattaci</h1>
+        <form class="flex flex-col space-y-1">
+            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+            <input type="text" id="name"  class="border py-4 px-8 rounded-lg" placeholder="None:" required />
+            <input type="email" id="surname"  class="border py-4 px-8 rounded-lg " placeholder="Cognome:" required/>
+            <input type="message" id="mail"  class="border py-4 px-8 rounded-lg "  placeholder="mail:" />
+            <textarea type="text" id="messaje"  class="border py-12 px-8 rounded-lg " rows="7" placeholder="messaggio:" required></textarea>
+            <button type="submit" [disabled]="!mailForm.valid" class="bg-black text-white py-4 rounded-md hover:bg-gray-900">
+                <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                Submit
+            </button>
+        </form>
+    </div>
+</div>
+
+<div class="h-96 ">
+
+
+    <form >
+
+ 
+    
+        <input type="text" name="name" required>
+        <input type="email" name="email" required>
+        <textarea name="message" required></textarea>
+        <input type="hidden" name="redirect" value="https://web3forms.com/success">
+        <button type="submit">Submit Form</button>
+    
+    </form>
+</div>
+
