@@ -1,15 +1,15 @@
 <body *ngIf="servizio" class="">
     <article class="bg-black  lg:flex lg:h-max sm:min-h-screen landscape:h-full">
-            <section class=" lg:w-3/4 sm:h-1/2 ">
+            <section class=" lg:w-3/4 ">
             <img [src]="servizio.img[0].url" alt="Service Image  " 
-                    class=" object-cover opacity-75 lg:min-h-screen w-screen    sm:h-128 lg:landscape:h-screen landscape:h-100">
+                    class=" object-cover opacity-75 lg:min-h-screen w-screen h-full     lg:landscape:h-screen landscape:h-100">
         </section>
-            <section class=" overflow-auto lg:w-1/2 lg:pt-32 pt-4 text-white pb-12 xl:px-20 lg:px-12 px-5  sm:landscape:h-max  subpixel-antialiased">
+            <section class=" overflow-auto lg:w-1/2 2xl:pt-32  text-white pb xl:px-20 lg:px-12 px-5  sm:landscape:h-max  subpixel-antialiased">
             <head class="flex sm:pb-4 ">
-                <h1 class="lg:text-4xl sm:text-6xl text-2xl  md:px-4 antialiased font-semibold sm:pt-16 pb-12 opacity-0 animate-fadeIn ">{{ servizio.name }}</h1>
+                <h1 class="lg:text-4xl sm:text-6xl text-2xl  md:px-4 antialiased font-semibold sm:pt-16 2xl:pb-12 opacity-0 animate-fadeIn ">{{ servizio.name }}</h1>
             </head>
 
-            <body class="lg:space-y-12 space-y-16 landscape:text-xl md:text-4xl md:py-8 md:px-4 lg:text-md font-normal  antialiased ">
+            <body class="lg:space-y-12 space-y-16 landscape:text-xl md:text-4xl md:py-8 md:px-4 lg:text-md antialiased ">
                 <p class="opacity-0 animate-fadeIn">{{ servizio.description[1].text }}</p>
                 
                 <ng-container *ngIf="servizio.description">
