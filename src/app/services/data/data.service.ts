@@ -79,9 +79,9 @@ export class DataService {
     
     {
       id: 2,
-      name: 'Progettazione Architettonica',
+      name: 'Riqualificazione Energetica',
       homeDescription: '',
-      homeTitle: 'Progettazione Architettonica',
+      homeTitle: 'Riqualificazione Energetica',
       description: [
         {id: 1, text: "L’attività di progettazione architettonica è volta alla realizzazione di opere pubbliche e di opere private, con particolare attenzione ai canoni di risparmio energetico e di consulenza alla progettazione “efficiente”, con studio dei particolari esecutivi e dell’eliminazione di ponti termici ed acustici....",},
         {id: 2, text: "Progettazione architettonica e strutturale"},
@@ -132,7 +132,7 @@ export class DataService {
     },
     {
       id: 4,
-      name: 'Certificazioni Energetiche',
+      name: 'Certificazioni e Analisi Energetiche',
       homeDescription: '',
       homeTitle: 'Certificazioni Energetiche',
       description: [
@@ -251,7 +251,7 @@ socioList: Socio[] = [
 
 
 
-{id:2, name:'per. ind. Paolo Carlini', description:[], img:[{id:1, url: 'https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png'}]}
+{id:2, name:'Alto Garda Servizi Spa', description:[], img:[{id:1, url: 'https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png'}]}
 ]
 
 
@@ -290,10 +290,9 @@ socioList: Socio[] = [
 
 //contact info
   private contact: Contact[] = [
-    {id: 1, info: '0464 512776'},
-    {id: 2, info: 'info@steaprogetto.com'},
-    {id: 3, info: '0464 513715'},
-    {id: 4, info: 'Via Santa Caterina, 60 - 38062 Arco TN'},
+    {id:1, title: "Telefono:", info: '0464 512776'},
+    { id:2,title: "Email:", info: 'info@steaprogetto.com'},
+    { id:3,title: "Indirizzo:", info: 'Via Santa Caterina, 60 - 38062 Arco TN'},
   ]
 
 

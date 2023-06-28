@@ -49,4 +49,5 @@ text: string
 export interface Contact {
     id: number; 
     info: string;
+    title: string;
 }

@@ -1,10 +1,10 @@
-<nav class="fixed w-full z-20 left-0 border-gray-900 dark:border-gray-800">
+  <nav class="fixed w-full z-20 left-0 border-gray-900 dark:border-gray-800 bg-transparent">
   <div class="w-screen-2xl  flex flex-wrap items-center justify-between mx-auto p-4">
     <div class="  ">
       <div class="  scroll-hide">
         <a href="/" class=" ">
 
-          <img src="assets/img/home/logo1.webP" class="  lg:h-16 lg:w-16 sm:h-20 sm:w-20">
+          <img src="assets/img/home/logo1.webP" class="  lg:h-24 lg:w-24 h-16 w-16 sm:max-lg:w-32 sm:max-lg:h-32">
           
         </a>
       </div>
@@ -31,7 +31,7 @@
   <app-footer></app-footer>
 
   <!-- Menú desplegado -->
-  <div *ngIf="menuAbierto" id="custom-menu" class="lg:h-screen  sm:w-4/5 sm:landscape:w-2/4 sm:landscape:min-h-screen sm:h-full  lg:landscape:w-96 lg:p-2 sm:p-10 space-y-10 flex shadow-lg bg-zinc-900 overflow-y-scroll" #menuContainer>
+  <div *ngIf="menuAbierto" id="custom-menu" class="lg:h-screen  sm:w-4/5 sm:landscape:w-2/4 sm:landscape:min-h-screen sm:h-full  lg:landscape:w-96 lg:p-2 sm:p-10 space-y-10 flex shadow-lg bg-zinc-900 md:max-lg:overflow-y-scroll" #menuContainer>
     <!-- Contenido del menú -->
     <button (click)="closeMenu()" type="button" class="close-button self-end lg:pt-9 lg:pr-6 
     ">

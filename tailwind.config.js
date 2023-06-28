@@ -26,6 +26,8 @@ module.exports = {
       spacing: {
         100: "32rem",
         128: "38rem",
+        256: "76rem"
+        
       },
       opacity: {
         '65': '.65',
